@@ -1,11 +1,10 @@
-from schemas.venda_schema import Venda
+﻿from schemas.venda_schema import Venda
 
 vendas = []
 
-class Vendarepository:
+class VendaRepository:
 
-    def cadastrar_venda(total, vendedor_id):
-        venda = Venda(total, vendedor_id)
-        vendas.appends(venda)
-        return venda 
-    
+    def cadastrar_venda(total, vendendor_id):
+        venda = Venda(total, vendendor_id)
+        vendas.append(venda)
+        return venda
